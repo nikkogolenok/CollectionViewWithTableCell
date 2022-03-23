@@ -17,6 +17,9 @@
 		44E4110927EB3FB900A66BB6 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E4110727EB3FB900A66BB6 /* CollectionTableViewCell.xib */; };
 		44E4110C27EB3FF100A66BB6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4110A27EB3FF100A66BB6 /* MyCollectionViewCell.swift */; };
 		44E4110D27EB3FF100A66BB6 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E4110B27EB3FF100A66BB6 /* MyCollectionViewCell.xib */; };
+		44E4111227EB419A00A66BB6 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4111127EB419A00A66BB6 /* ViewController+Ext.swift */; };
+		44E4111527EB43BE00A66BB6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4111427EB43BE00A66BB6 /* Model.swift */; };
+		44E4111727EB4A2B00A66BB6 /* CollectionTableViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E4111627EB4A2B00A66BB6 /* CollectionTableViewCell+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		44E4110727EB3FB900A66BB6 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		44E4110A27EB3FF100A66BB6 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		44E4110B27EB3FF100A66BB6 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		44E4111127EB419A00A66BB6 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		44E4111427EB43BE00A66BB6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		44E4111627EB4A2B00A66BB6 /* CollectionTableViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionTableViewCell+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +70,12 @@
 		44E410EB27EB241600A66BB6 /* CollectionViewWithTableCell */ = {
 			isa = PBXGroup;
 			children = (
-				44E4110027EB243000A66BB6 /* SupportFiles */,
-				44E4110127EB24C100A66BB6 /* Controller */,
+				44E4110E27EB40F500A66BB6 /* Extension */,
+				44E4111327EB425500A66BB6 /* Model */,
 				44E4110227EB24CF00A66BB6 /* View */,
+				44E4110127EB24C100A66BB6 /* Controller */,
 				44E4110527EB3F1A00A66BB6 /* Cell */,
+				44E4110027EB243000A66BB6 /* SupportFiles */,
 			);
 			path = CollectionViewWithTableCell;
 			sourceTree = "<group>";
@@ -125,6 +133,39 @@
 				44E4110327EB3F0200A66BB6 /* TableCell */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		44E4110E27EB40F500A66BB6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44E4111027EB411300A66BB6 /* Collection */,
+				44E4110F27EB410800A66BB6 /* Table */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		44E4110F27EB410800A66BB6 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				44E4111127EB419A00A66BB6 /* ViewController+Ext.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		44E4111027EB411300A66BB6 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				44E4111627EB4A2B00A66BB6 /* CollectionTableViewCell+Ext.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		44E4111327EB425500A66BB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44E4111427EB43BE00A66BB6 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E4111527EB43BE00A66BB6 /* Model.swift in Sources */,
 				44E410F127EB241600A66BB6 /* ViewController.swift in Sources */,
 				44E4110C27EB3FF100A66BB6 /* MyCollectionViewCell.swift in Sources */,
+				44E4111227EB419A00A66BB6 /* ViewController+Ext.swift in Sources */,
 				44E410ED27EB241600A66BB6 /* AppDelegate.swift in Sources */,
+				44E4111727EB4A2B00A66BB6 /* CollectionTableViewCell+Ext.swift in Sources */,
 				44E410EF27EB241600A66BB6 /* SceneDelegate.swift in Sources */,
 				44E4110827EB3FB900A66BB6 /* CollectionTableViewCell.swift in Sources */,
 			);
